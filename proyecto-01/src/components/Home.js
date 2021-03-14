@@ -31,9 +31,10 @@ export default function Home() {
                         </div>
                         
                         <div>
-                            <Link to="" uk-icon="icon: heart; ratio: 1">
-                            
-                            </Link>
+                            <button className="uk-button uk-text-danger" 
+                                    uk-icon="icon: heart; ratio: 1.5"
+                                    uk-toggle="">                                
+                            </button>
                         </div>
                         
                     </div>
@@ -48,11 +49,14 @@ export default function Home() {
                 </div>
                 
                 <div className="uk-margin-auto-vertical">
-                    <div className=""></div>
+                    <div className="">
+                        <span uk-icon="icon: arrow-left; ratio: 2"></span>
+                        <span uk-icon="icon: arrow-right; ratio: 2"></span>
+                    </div>
 
                     <div>
                         <ul uk-accordion="collapsible: false">
-                            <li class="uk-open">
+                            <li>
                                 <Link className="uk-accordion-title" to="#">Description</Link>
                                 <div className="uk-accordion-content">
                                     <p>Fresh, tangy and zesty lime with refreshing minty notes</p>
@@ -64,7 +68,7 @@ export default function Home() {
                                     <p>Fresh, tangy and zesty lime with refreshing minty notes</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="uk-open">
                                 <Link className="uk-accordion-title" to="#">Ingredients</Link>
                                 <div className="uk-accordion-content">
                                     <p>Fresh, tangy and zesty lime with refreshing minty notes</p>
