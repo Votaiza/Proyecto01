@@ -14,6 +14,10 @@ h1 {
     background-color: #dccdcd;
 }
 
+.div-flotante{
+    background-color: #74b1b9;
+}
+
 .border-radius{
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;

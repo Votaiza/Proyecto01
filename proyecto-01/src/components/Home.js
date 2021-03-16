@@ -31,30 +31,45 @@ export default function Home() {
                         </div>
                         
                         <div>
-                            <button className="uk-button uk-text-danger" 
-                                    uk-icon="icon: heart; ratio: 1.5"
-                                    uk-toggle="">                                
+                            <button className="uk-button uk-button-link uk-text-danger" >
+
+                                <span uk-icon="icon: heart; ratio: 1.5"></span>                                
                             </button>
                         </div>
                         
                     </div>
                 </div>
                 
-                <div className="uk-margin-auto-vertical background-gray border-radius">
+                <div className="background-gray border-radius uk-inline">                    
                     
-                    <div className="">
-                        <img src={imgProduct}  width="300" alt="" uk-img></img>
-                    </div>
-                    
-                </div>
-                
-                <div className="uk-margin-auto-vertical">
-                    <div className="">
-                        <span uk-icon="icon: arrow-left; ratio: 2"></span>
-                        <span uk-icon="icon: arrow-right; ratio: 2"></span>
+                    <div className="uk-position-large uk-position-top-right uk-margin-remove-right uk-button uk-button-secondary uk-border-pill">                        
+                        <p className="uk-text-center uk-margin-auto-vertical"><span uk-icon="icon: instagram; ratio: 1"
+                            className=""></span> Instagram</p>                        
                     </div>
 
-                    <div>
+                    <div className="uk-position-large uk-position-bottom-left uk-margin-remove-left uk-button uk-button-primary uk-border-pill">
+                        <p className="uk-text-center uk-margin-auto-vertical"><span uk-icon="icon: facebook; ratio: 1"
+                            className=""></span> Facebook</p> 
+                    </div>
+
+                    <div className="">
+                        <img src={imgProduct}  width="300" alt="" uk-img="true"></img>
+                    </div>                    
+                                        
+                </div>
+                
+                <div className="uk-flex uk-flex-column uk-flex-between uk-margin-auto-vertical">
+                    <div className="uk-margin-large-top">
+                        <button uk-icon="icon: arrow-left; ratio: 2">
+
+                        </button>
+
+                        <button uk-icon="icon: arrow-right; ratio: 2">
+
+                        </button>
+                    </div>
+
+                    <div className="uk-margin-small-bottom">
                         <ul uk-accordion="collapsible: false">
                             <li>
                                 <Link className="uk-accordion-title" to="#">Description</Link>
@@ -68,7 +83,7 @@ export default function Home() {
                                     <p>Fresh, tangy and zesty lime with refreshing minty notes</p>
                                 </div>
                             </li>
-                            <li class="uk-open">
+                            <li className="uk-open">
                                 <Link className="uk-accordion-title" to="#">Ingredients</Link>
                                 <div className="uk-accordion-content">
                                     <p>Fresh, tangy and zesty lime with refreshing minty notes</p>
